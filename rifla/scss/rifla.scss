@@ -1,0 +1,55 @@
+.container {
+    width: 40%;
+    margin: auto;
+    @media screen and (max-width: 920px) {
+        width: 90%;
+    }
+}
+.fa {
+    margin-right: 0.5em;
+}
+.o-logo {
+    text-align: center;
+    margin-bottom: 5.5em;
+    margin-top: 2em;
+    .o-logo-img {
+        width: 200px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer {
+    a {
+        margin-right: 1em;
+    }
+    a:last-of-child {
+        margin: 0;
+    }
+    text-align: center;
+}
+.o-media__img--rounded {
+    border-radius: 1024px;
+}
+.o-form--new-item {
+    margin-bottom: 1.75em;
+}
+.o-status {
+    //margin-bottom: 3.5em;
+    margin-bottom: 5em;
+}
+.o-grid__col--center {
+    margin: auto;
+}
+.o-media {
+    margin-bottom: 3em;
+}
+.o-media__body {
+	text-align: justify;
+}
+.c-card {
+	width: 100%;
+	margin-bottom: 5em;
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="scooter/css/scooter.css">
+      <link rel="stylesheet" href="rifla/css/rifla.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="container">
+         <div class="o-logo">
+            <h1 class="f-subhead">Rifl.pw</h1>
+            Сервис для передачи самоуничтожающихся данных
+         </div>
+         <div class="o-grid o-grid--responsive">
+            <div class="o-grid__col o-grid__col--12-of-12">
+               <h1 class="f1">Создать заметку <span class="c-badge">макс. 1024 символа</span></h1>
+               <form class="o-form--new-item">
+                  <label class="c-label">
+                  Текст заметки <small>(0/1024)</small>
+                  <textarea class="c-input" placeholder="Введите текст заметки, поддерживается Markdown"></textarea>
+                  </label>
+                  <label class="c-label">
+                  Пароль
+                  <input class="c-input" placeholder="Если хотите, можете ввести пароль" type="password" />
+                  </label>
+                  <label class="c-label">
+                  <input type="checkbox" checked/> 
+                  Удалить после прочтения
+                  </label>
+                  <button class="c-btn c-btn--primary"><i class="fa fa-book" aria-hidden="true"></i> Получить ссылку на чтение</button>
+               </form>
+               <!--<div class="o-status">
+                  <div class="c-banner">
+                     <i class="fa fa-spinner fa-pulse" aria-hidden="true"></i><strong>Загрузка: </strong>27%
+                  </div>
+                  </div>-->
+               <div class="o-status">
+                  <label class="c-label">
+                  Ссылка  на чтение
+                  <input class="c-input is-disabled" type="text" value="https://rifl.pw/notes/b078c5c1637245363cf5bf840bb9fa90"/>
+                  </label>
+               </div>
+            </div>
+            <!--<div class="o-grid__col o-grid__col--6-of-12">
+               <h1 class="f1">Загрузить файл <span class="c-badge">макс. 500 МБ</span></h1>
+               <form class="o-form--new-item">
+                  <label class="c-label">
+                  Выберите файл
+                  <br>
+                  <label for="file-upload" class="c-btn c-btn--tertiary c-btn--big h-file">
+                  <i class="fa fa-cloud-upload" aria-hidden="true"></i>Загрузить файл
+                  </label>
+                  <input id="file-upload" type="file" /> file.zip, 23MB
+                  </label>
+                  <label class="c-label">
+                  Пароль
+                  <input class="c-input" placeholder="Если хотите, можете ввести пароль" type="password" />
+                  </label>
+                  <button class="c-btn c-btn--primary"><i class="fa fa-cloud" aria-hidden="true"></i> Получить ссылку на скачивание</button>
+               </form>
+               <div class="o-status">
+                  <div class="c-banner">
+                     <i class="fa fa-spinner fa-pulse" aria-hidden="true"></i><strong>Загрузка: </strong>27%
+                  </div>
+               </div>
+               </div>-->
+         </div>
+         <h1 class="f1">Почему Rifl?</h1>
+         <div class="o-grid o-grid--responsive">
+            <div class="o-grid__col o-grid__col--6-of-12">
+               <div class="o-media">
+                  <img class="o-media__img" src="img/time.png" width="84" alt="1." />
+                  <div class="o-media__body">
+                     <h2 class="f2">Автоудаление</h2>
+                     <p>
+                        <!--Файлы и -->Заметки на Rifl удаляются сразу же после прочтения. Если страница заметки <!--или файла-->не была посещена в течении суток, она будет удалена.
+                     </p>
+                  </div>
+               </div>
+               <div class="o-media">
+                  <img class="o-media__img" src="img/lock.png" width="84" alt="2." />
+                  <div class="o-media__body">
+                     <h2 class="f2">Анонимность</h2>
+                     <p>Rifl не ведёт логи конфиденциальных данных, не собирает IP-адресса, User Agent и прочие данные в целях сбора статистики или передачи третьим лицам.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="o-grid__col o-grid__col--6-of-12">
+               <div class="o-media">
+                  <img class="o-media__img" src="img/code.png" width="84" alt="3." />
+                  <div class="o-media__body">
+                     <h2 class="f2">Открытый исходный код</h2>
+                     <p><a href="">Исходный код Rifl</a> открыт для всех желающих, это значит, что каждый может проверить сервис на наличие бекдоров или установить копию на любой другой сервер.</p>
+                  </div>
+               </div>
+               <div class="o-media">
+                  <img class="o-media__img" src="img/api.png" width="84" alt="4." />
+                  <div class="o-media__body">
+                     <h2 class="f2">Публичный API</h2>
+                     <p>Наш API позволяет всем желающим создавать клиенты Rifl для самых разных платформ. Документацию к API можно прочитать <a href="">вот здесь</a>.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="footer"><a class="u-font-meta" href="">Rifl, 2016</a><a href="">Community</a><a href="">API</a><a href="">Telegram Channel</a><a href="">GitHub</a></div>
+         <br><br>
+      </div>
+   </body>
